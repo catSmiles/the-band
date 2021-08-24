@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* quy tac lam web */
+/*  1 từ trên xuống dưới 
+    2 từ trái qua phải
+    3 từ tổng quan đến chi tiết
+    
+    quy tắc só 2 quan sắt một đối tượng
+    1 vị trí
+    2 kích thước 
+    3 màu sắc 
+    kiểu, hình dáng
+*/
+/* common css */
+.row {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-four {
+  width: 25%;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.btn {
+  color: #000;
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+}
+.btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#main {
+}
+#header {
+  padding: 8px 16px;
+  height: 54px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#header .logo {
+  display: inline-block;
+  line-height: 38px;
+}
+#header .logo a {
+  padding: 8px 16px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+#header .nav {
+  float: right;
+  /* display: inline-block; */
+}
+#header .logo:hover,
+#header .nav li:hover {
+  background-color: #ccc;
+  color: #000;
+}
+#header .nav li {
+  display: inline-block;
+  line-height: 38px;
+}
+#header .nav a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 4px;
+}
+/* slider */
+#slider {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#slider img {
+  vertical-align: middle;
+}
+#slider .slider-img {
+  max-width: 100%;
+  height: auto;
+}
+.slider-logo {
+  margin-top: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 36px;
+}
+.logo-box {
+  color: #fff;
+  background-color: #000;
+  opacity: 0.7;
+  padding: 12px 17px;
+  display: inline-block;
+}
+.logo-text {
+  letter-spacing: 4px;
+  color: #f1f1f1;
+  display: inline-block;
+}
+#content {
+  padding: 8px 16px;
+}
+#content .content-section {
+  padding: 32px 16px;
+}
+#content .section-heading {
+  font-size: 24px;
+  padding: 16px 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+}
+/* project css */
+.project-list .project-item {
+  position: relative;
+}
+.project-item img {
+  width: 100%;
+}
+
+.project-item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+}
+/* about css */
+.about-text {
+  line-height: 1.5;
+  margin: 15px 0;
+}
+/* member of architect */
+.member-list {
+  margin-bottom: 24px;
+}
+.member-list .member-img {
+  width: 100%;
+  border-radius: 2px;
+}
+.member-list .member-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.member-list .office-member {
+  opacity: 0.6;
+  margin-top: 15px;
+}
+.member-list .sub-heading {
+  margin-top: 15px;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* contact */
+.contact-text {
+  margin: 15px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.send-btn {
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+  text-decoration: none;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  margin: 16px 0;
+}
+.send-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.map-img {
+  width: 100%;
+  padding: 0 16px;
+}
+#footer {
+  background-color: #fff;
+  padding: 16px 0;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+#footer .copy-right {
+  padding: 15px 0;
+}
+#footer a {
+  color: #000;
+}

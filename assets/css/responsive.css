@@ -1,0 +1,33 @@
+/* mobile <740px */
+@media only screen and (max-width: 739px) {
+  #header {
+    overflow: hidden;
+  }
+  .logo-text {
+    display: none;
+  }
+  .s-col-full {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .s-mt-0 {
+    margin-top: 0px ;
+  }
+}
+
+/* tablet >=740px <1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .m-col-half {
+    width: 50%;
+  }
+  .m-mt-16 {
+    margin-top: 16px;
+  }
+  .m-mb-32 {
+    margin-bottom: 32px;
+  }
+}
+
+/* laptop >=1024px */
+@media only screen and (min-width: 1024px) {
+}
